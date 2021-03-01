@@ -1,0 +1,98 @@
+.banner
+{
+    //text-align: center;
+    width: 100%;
+    position: relative;
+
+    
+   
+
+
+    &__image
+        {
+            width: 100%;
+
+            -webkit-animation-name: example;
+            -webkit-animation-duration: 4s;
+            animation-name: example;
+            animation-duration: 4s;
+         
+
+            & >img 
+            {
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+                
+            }
+
+            @keyframes example {
+                from {opacity: 0.4;}
+                to {opacity: 1;}
+              }
+            
+              @-webkit-keyframes example {
+                from {opacity: 0.4;}
+                to {opacity: 1;}
+              }
+            
+        }
+    
+   
+
+   /* & > img 
+            {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }*/
+
+
+   &__prev, &__next 
+            {
+                position: absolute;
+                top: 50%;
+                cursor: pointer;
+                background-color: transparent;
+                width: auto;
+                font-size: xx-large;
+                font-weight: bold;
+                padding: 16px;
+                transition: 0.5s;
+                color: white;
+                
+            }
+   &__next
+            {
+                 right: 0;   
+                
+
+                    border-top-left-radius: 10%;
+                    border-bottom-left-radius: 10%;
+
+            }
+
+    &__prev
+            {
+                border-top-right-radius: 10%;
+                    border-bottom-right-radius: 10%;
+
+            }
+
+    &__prev:hover, &__next:hover 
+            {
+                background-color: black;
+                
+            }
+
+
+    
+
+    
+}
+
+.fade{
+    
+}
+
+

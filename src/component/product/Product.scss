@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap');
+
+
+
+.productlist 
+{
+    width: 100%;
+    
+   // border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    min-height: 350px;
+
+    
+   
+   
+    
+    
+    
+
+  &__item 
+    {
+        margin-left: 10px;
+        position: relative;
+        width: 300px;
+        
+        
+
+        &__photo 
+        {
+            width: 100%;
+            overflow: hidden;
+            
+        }
+
+
+        &__button 
+        {
+            width: 100%;
+            position: absolute;
+            bottom: 20%;
+            //left: 40%;
+            text-align: center;
+            
+            
+            &>button {
+                border-radius: 20%;
+                background-color: transparent;
+                color: whitesmoke;
+                opacity: 0;
+                font-family: Padauk;
+                
+                
+                
+            }
+        }
+
+        &__title 
+        {
+            word-wrap: break-word;
+            color : whitesmoke;
+            position: absolute;
+            top: 0;
+            text-align: center;
+            opacity: 0;
+            font-family: Padauk;
+            font-size: 18px;
+
+          
+        }
+
+
+        &:hover &__button>button
+       
+        {
+            opacity: 1;
+            cursor: pointer;
+            transition: 1.8s;
+        }
+
+        &:hover  &__photo > img
+        {
+            opacity: 0.1;
+            transform: scale(1.35);
+            transition: 2s;
+        }
+
+        &:hover  &__title 
+        {
+            top:30%;
+            opacity: 1;
+            transition: 1.8s;
+        }
+        
+    }
+}
+
+
+.text-red{color:red; text-align: center;}
+
+.displayFlex
+{
+    display: flex;
+    justify-content: center;
+
+    &>button{
+        cursor: pointer;
+        margin: 5px;
+    }
+}
+
+.active{
+    background-color: black;
+    color: white;
+}
